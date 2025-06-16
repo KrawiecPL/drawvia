@@ -1,36 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drawvia</title>
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 4rem;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #333;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>Welcome to Drawvia.art</h1>
-  <p>Custom anime-style avatars and illustrations.<br>Website under construction 🛠️</p>
-  <p>Check out my <a href="https://www.fiverr.com/">Fiverr profile</a> (coming soon!)</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawvia.art</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-logo">
+          <a href="/">
+            <img src="images/drawvia-logo.png" alt="Drawvia.art logo" />
+          </a>
+        </div>
+        <div class="burger-button" id="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav-menu">
+          <div class="close-button" id="close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="nav-element"><a href="#portfolio">Portfolio</a></div>
+          <div class="nav-element"><a href="#howitworks">How It Works</a></div>
+          <div class="nav-element"><a href="#contact">Contact</a></div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero-left">
+            <h1>Custom Anime & Digital Illustrations Created Just for You</h1>
+            <div class="hero-image-mobile">
+              <img
+                src="images/author-avatar.png"
+                alt="Anime-style portrait of the artist representing Drawvia.art"
+              />
+            </div>
+            <p>
+              Get a unique anime-style avatar, character, or full-body
+              illustration drawn with care and attention to detail. Whether
+              you're looking to upgrade your online profile, bring your OC to
+              life, surprise a friend with a personalized gift, or decorate your
+              space with beautiful custom art – you're in the right place. Every
+              piece is hand-drawn to reflect your idea’s personality and mood,
+              in a clean, expressive anime style that stands out.
+            </p>
+            <a href="https://www.fiverr.com/" class="hero-button">Order now</a>
+          </div>
+          <div class="hero-right">
+            <img
+              src="images/author-avatar.png"
+              alt="Anime-style portrait of the artist representing Drawvia.art"
+            />
+          </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+          <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <p>
+              A glimpse into what we’ve created so far — portraits, characters,
+              and more. Each piece is handcrafted with care and attention to
+              detail. We’re just getting started, but every drawing tells a
+              story.
+            </p>
+          </div>
+          <div class="portfolio-container">
+            <img src="images/portfolio-1.jpg" alt="" />
+            <img src="images/portfolio-1.jpg" alt="" />
+            <img src="images/portfolio-1.jpg" alt="" />
+            <img src="images/portfolio-1.jpg" alt="" />
+            <img src="images/portfolio-1.jpg" alt="" />
+            <img src="images/portfolio-1.jpg" alt="" />
+          </div>
+        </section>
+
+        <section class="howitworks" id="howitworks">
+          <div class="howitworks-header">
+            <h2>How It Works</h2>
+            <p>
+              You share your vision — a character, a moment, a mood. We bring it
+              to life with care and creativity, turning your idea into a
+              one-of-a-kind illustration made just for you.
+            </p>
+          </div>
+          <div class="howitworks-container">
+            <div class="howitworks-container-element">
+              <div class="element-icon">
+                <i class="fa-regular fa-lightbulb main-icon"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="element-content">
+                <h3>Send us your idea</h3>
+                <p>- a photo, a sketch, or just a description</p>
+              </div>
+            </div>
+            <div class="howitworks-container-element">
+              <div class="element-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-display main-icon"></i>
+              </div>
+              <div class="element-content">
+                <h3>We illustrate</h3>
+                <p>- and share a preview</p>
+              </div>
+            </div>
+            <div class="howitworks-container-element">
+              <div class="element-icon">
+                <i class="fa-regular fa-circle-check main-icon"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="element-content">
+                <h3>You approve</h3>
+                <p>- we’ll tweak it if needed</p>
+              </div>
+            </div>
+            <div class="howitworks-container-element">
+              <div class="element-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-truck-fast main-icon"></i>
+              </div>
+              <div class="element-content">
+                <h3>Final delivery</h3>
+                <p>- you get the finished artwork in high resolution</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-left">
+            <div class="contact-header">
+              <h2>Contact</h2>
+              <p>
+                Have a question, a custom request, or just want to say hi?
+                <br />
+                Feel free to reach out — we’d love to hear from you!
+              </p>
+            </div>
+            <div class="contact-image-mobile">
+              <img src="images/contact-image.png" alt="" />
+            </div>
+            <div class="contact-content">
+              <div class="content-element">
+                <a href="mailto:drawvia@gmail.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>drawvia@gmail.com</p>
+                </a>
+              </div>
+              <div class="content-element">
+                <a href="https://www.fiverr.com/">
+                  <i class="fa-regular fa-user"></i>
+                  <p>animeavatarforu</p>
+                </a>
+              </div>
+              <div class="content-element">
+                <a href="https://instagram.com/">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>@drawvia</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <img src="images/contact-image.png" alt="" />
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="images/drawvia-logo.png" alt="Drawvia.art logo" />
+            </a>
+          </div>
+          <div class="footer-contact">
+            <div class="content-element">
+              <a href="mailto:drawvia@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                <p>drawvia@gmail.com</p>
+              </a>
+            </div>
+            <div class="content-element">
+              <a href="https://www.fiverr.com/">
+                <i class="fa-regular fa-user"></i>
+                <p>animeavatarforu</p>
+              </a>
+            </div>
+            <div class="content-element">
+              <a href="https://instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+                <p>@drawvia</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      burgerBtn = document.getElementById("menu-button");
+      closeBtn = document.getElementById("close-button");
+
+      menuBtns = document.querySelectorAll("nav .nav-element");
+
+      burgerBtn.addEventListener("click", () => {
+        document.getElementById("nav-menu").classList.toggle("active");
+        document.querySelector("body").style.height = "100vh";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        document.getElementById("nav-menu").classList.toggle("active");
+        document.querySelector("body").style.height = "";
+      });
+
+      menuBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.getElementById("nav-menu").classList.toggle("active");
+          document.querySelector("body").style.height = "";
+        });
+      });
+    </script>
+  </body>
 </html>
