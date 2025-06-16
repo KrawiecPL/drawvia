@@ -215,17 +215,20 @@
       burgerBtn.addEventListener("click", () => {
         document.getElementById("nav-menu").classList.toggle("active");
         document.querySelector("body").style.height = "100vh";
+        document.querySelector("body").style.overflow = "hidden";
       });
 
       closeBtn.addEventListener("click", () => {
         document.getElementById("nav-menu").classList.toggle("active");
         document.querySelector("body").style.height = "";
+        document.querySelector("body").style.overflow = "";
       });
 
       menuBtns.forEach(btn => {
         btn.addEventListener("click", () => {
           document.getElementById("nav-menu").classList.toggle("active");
           document.querySelector("body").style.height = "";
+          document.querySelector("body").style.overflow = "";
         });
       });
     </script>
